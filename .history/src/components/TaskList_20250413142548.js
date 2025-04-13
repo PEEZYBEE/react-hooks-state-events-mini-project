@@ -1,9 +1,8 @@
+// src/components/TaskList.js
 import React from "react";
 import Task from "./Task";
 
 function TaskList({ tasks, onDeleteTask }) {
-  if (!tasks || !Array.isArray(tasks)) return null;
-
   return (
     <div className="tasks">
       {tasks.map((task) => (

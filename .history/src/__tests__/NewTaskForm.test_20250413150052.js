@@ -1,7 +1,7 @@
 // src/__tests__/NewTaskForm.test.js
 import { render, screen, fireEvent } from "@testing-library/react";
+import { act } from "react"; // Import act from react
 import NewTaskForm from "../components/NewTaskForm";
-import App from "../components/App"; // Add this import
 import { CATEGORIES } from "../data";
 
 test("calls the onTaskFormSubmit callback prop when the form is submitted", () => {

@@ -1,7 +1,6 @@
 // src/components/NewTaskForm.js
 import React, { useState } from "react";
 
-
 function NewTaskForm({ categories, onTaskFormSubmit }) {
   const [formData, setFormData] = useState({
     text: "",
