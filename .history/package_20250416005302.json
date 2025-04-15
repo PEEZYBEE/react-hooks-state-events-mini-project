@@ -38,8 +38,9 @@
     ]
   },
   "jest": {
-  "watchPathIgnorePatterns": ["<rootDir>/\\.history/"]
+  "testPathIgnorePatterns": [
+    "/node_modules/", "/.history/"
+  ]
 }
-
 
 }
