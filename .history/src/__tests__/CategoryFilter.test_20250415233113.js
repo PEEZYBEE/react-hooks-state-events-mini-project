@@ -40,6 +40,7 @@ test("displays all tasks when the 'All' button is clicked", () => {
   const codeButton = screen.getByRole("button", { name: "Code" });
   const allButton = screen.getByRole("button", { name: "All" });
 
+  // Filter to Code first to ensure state change
   fireEvent.click(codeButton);
   expect(screen.queryByText("Buy rice")).not.toBeInTheDocument();
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function Task({ text, category, id, onDelete }) {
   const handleClick = () => {
-    onDelete(id);
+    onDelete(id); // Pass id instead of text
   };
 
   return (

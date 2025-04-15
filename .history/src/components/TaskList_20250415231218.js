@@ -1,13 +1,11 @@
-import React from "react";
 import Task from "./Task";
 
-function TaskList({ tasks = [], onDeleteTask = () => {} }) {
+function TaskList({ tasks, onDeleteTask }) {
   const taskItems = tasks.map((task) => (
-    <Task
-      key={task.id} // Use unique id
+    <Task 
+      key={task.text}
       text={task.text}
       category={task.category}
-      id={task.id} // Pass id for deletion
       onDelete={onDeleteTask}
     />
   ));
@@ -16,3 +14,4 @@ function TaskList({ tasks = [], onDeleteTask = () => {} }) {
 }
 
 export default TaskList;
+

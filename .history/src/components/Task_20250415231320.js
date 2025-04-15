@@ -1,8 +1,6 @@
-import React from "react";
-
-function Task({ text, category, id, onDelete }) {
+function Task({ text, category, onDelete }) {
   const handleClick = () => {
-    onDelete(id);
+    onDelete(text);
   };
 
   return (
@@ -15,3 +13,4 @@ function Task({ text, category, id, onDelete }) {
 }
 
 export default Task;
+
